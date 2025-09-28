@@ -25,7 +25,7 @@ public class UDPClient {
             DatagramPacket packet_in = new DatagramPacket(Buffer_in, Buffer_in.length);
             clientSocket.receive(packet_in);
             String Response = new String(packet_in.getData());
-            System.out.println("Server: " + Response);
+            System.out.println("UDP Server: " + Response);
             clientSocket.close();
         } catch (SocketException e) {
             e.printStackTrace();
