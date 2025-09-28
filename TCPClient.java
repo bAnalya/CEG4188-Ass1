@@ -23,7 +23,7 @@ public class TCPClient {
 			// send token
 			out.println("Hello TCP");
 			// read response
-			System.out.println("Server: " + in.readLine());
+			System.out.println("TCP Server: " + in.readLine());
 			// close resources
 			out.close();
 			in.close();
