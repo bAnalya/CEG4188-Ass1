@@ -18,6 +18,7 @@ public class TCPServer {
             while (true) {
                 // wait for incoming connection requests
                 Socket client = serverSocket.accept();
+                System.out.println("Client connected ");
                 // get output and input streams and advanced streams
                 OutputStream os = client.getOutputStream();
                 InputStream is = client.getInputStream();
